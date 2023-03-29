@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+    <title><%= movie.title %></title>
+<body>
+    <%- include('./partials/figure') %>
+    <h1><%= movie.title %> </h1>    
+    <br>
+    <p>RATING: <%= movie.rating %> </p>
+    <p>AWARDS: <%= movie.awards %> </p>
+    <p>LENGTH: <%= movie.length + ' min'%> </p>
+    <p>RELEASE DATE: <%= movie.release_date %> </p>
+    <br>
+    <%- include('./partials/links') %>
+
+</body>
+</html>

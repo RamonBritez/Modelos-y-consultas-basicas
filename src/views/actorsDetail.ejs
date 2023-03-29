@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('./partials/head') %>
+    <title><%= actors.first_name+ ' ' +actors.last_name%></title>
+<body>
+    <%- include('./partials/figure') %>
+    <h1><%= actors.first_name+' '+actors.last_name %> </h1>
+    <br>
+    <p>RANKIG: <%= actors.rating %> </p>
+    <br>
+    <a href="/movies/detail/<%= actors.favorite_movie_id %>">Pelicula Favorita: <%= actors.favorite_movie_id %></a>
+    <br>
+    <%- include('./partials/links') %>
+
+</body>
+</html>
